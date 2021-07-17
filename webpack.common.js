@@ -75,16 +75,16 @@ module.exports = {
   },
   plugins: [
 		new HtmlPlugin({
-			template: './public/index.html',
+			template: './index.html',
     }),
     new CopyPlugin({
 			patterns: [
 				{
 					from: 'public',
-					to: 'dist',
+					to: '',
 					toType: 'dir',
 					globOptions: {
-						ignore: ['.DS_Store', 'index.html'],
+						ignore: ['.DS_Store'],
 					},
 				},
 			],
